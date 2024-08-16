@@ -13,6 +13,9 @@ class Project(models.Model):
     Description=models.CharField(max_length=1000)
     status=models.CharField(max_length=15)
     
-    
+class Report(models.Model):
+    reportType = models.CharField(max_length=20)
+    projectName = models.CharField(max_length=150)
+    reportfile = models.CharField(max_length=7000)
 
 # Create your models here.

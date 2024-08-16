@@ -1,0 +1,77 @@
+.report .heading {
+  border-bottom: 1px solid gray;
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.report .report-body {
+  border-top: 2px solid green;
+  border-right: 2px solid gray;
+  margin: 1.5rem;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: -2px 2px 2px gray;
+  font-size: 1.3em;
+}
+
+.report .report-body .up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.report .report-body .up .search {
+  display: flex;
+}
+
+.report .report-body .up .search input {
+  width: 25rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.report .report-body .up .search .img {
+  margin-left: 1rem;
+  border-radius: 0.2rem;
+  background-color: white;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.report .report-body .up .search .img img {
+  width: 1.3rem;
+  padding: 0.2rem;
+}
+
+.report .report-body .up .add-report {
+  width: 10rem;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  background-color: rgb(52, 43, 210);
+  color: white;
+  border-radius: 0.7rem;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(2, 37, 176);
+}
+
+.report .report-body .up .add-report:hover {
+  background-color: rgb(65, 140, 238);
+  color: black;
+}
+
+.report .report-body .down {
+  margin: 1.5rem;
+}
+
+.report .report-body .down table {
+  width: 100%;
+}
+
+.report .report-body .down table th,
+td {
+  padding: 0.3rem;
+}

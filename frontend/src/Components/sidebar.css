@@ -1,0 +1,58 @@
+.sideBar {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(14, 4, 196),
+    rgb(255, 0, 0, 0)
+  );
+  width: 10vw;
+  min-height: 100vh;
+}
+
+.sideBar .logo {
+  padding: 2vh;
+  font-size: 1.5vw;
+  color: white;
+  font-weight: 900;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.sideBar .logo img {
+  filter: blur(0.4px);
+  width: 2.2vw;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 5, 25);
+}
+
+.sideBar .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.sideBar .menu ul {
+  list-style-type: none;
+}
+
+.sideBar .menu ul li {
+  padding: 0.7rem 0 0.7rem 1rem;
+  border-bottom: 1px solid black;
+  font-size: 1.5vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.sideBar .menu ul li img {
+  filter: blur(0.4px);
+  width: 2.2vw;
+  display: inline-block;
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 5, 25);
+}

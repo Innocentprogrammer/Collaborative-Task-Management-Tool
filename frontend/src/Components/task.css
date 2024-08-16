@@ -1,0 +1,61 @@
+.task .heading {
+  border-bottom: 1px solid gray;
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.task .task-container {
+  border-top: 2px solid green;
+  border-right: 2px solid gray;
+  margin: 1rem 1.5rem 0 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  box-shadow: -3px 3px 3px gray;
+  font-size: 1.3em;
+}
+
+.task .task-container .add-task {
+  border-bottom: 1px solid gray;
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.task .task-container .add-task input {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.task .task-container .add-task button {
+  width: 8rem;
+  padding: 0.3em;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+  background-color: rgb(52, 43, 210);
+  color: white;
+  border-radius: 0.7rem;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 5, 25);
+}
+
+.task .task-container .add-task button:hover{
+  background-color: rgb(70, 157, 245);
+  color: black;
+  letter-spacing: 0.1rem;
+}
+
+.task .task-container .show-task {
+  margin: 1.5rem;
+}
+
+.task .task-container .show-task .tasklist {
+  border-top: 2px solid green;
+  border-right: 2px solid gray;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  box-shadow: -3px 3px 3px gray;
+  font-size: 1.3em;
+}

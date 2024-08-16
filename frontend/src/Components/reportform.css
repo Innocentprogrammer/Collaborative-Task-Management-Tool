@@ -1,0 +1,67 @@
+.reportForm .heading {
+  border-bottom: 1px solid gray;
+  margin: 1rem 1.5rem 0 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.reportForm .report-container {
+  border-top: 2px solid green;
+  border-right: 2px solid gray;
+  margin: 1rem 1.5rem 0 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  box-shadow: -3px 3px 3px gray;
+  font-size: 1.3em;
+}
+
+.reportForm .report-container form label {
+  padding-right: 18rem;
+}
+
+.reportForm .report-container form input {
+  width: 40rem;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.5rem;
+}
+
+.reportForm .report-container form .file {
+  width: 40rem;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+}
+.reportForm .report-container form select {
+  width: 40.7rem;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.5rem;
+}
+
+.reportForm .report-container form button {
+  width: 97.5%;
+  padding: 0.3rem;
+  margin: 0.3rem 0 0.3rem 0;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: rgb(52, 43, 210);
+  color: white;
+  border-radius: 0.7rem;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(2, 37, 176);
+}
+
+.reportForm .report-container form button:hover {
+  background-color: rgb(70, 157, 245);
+  color: black;
+  letter-spacing: 0.1rem;
+}

@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./report.css";
 import { assets } from "../assest/assest";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Report() {
+  const [report, setReport] = useState([]);
+  useEffect(() => {
+    async function getAllReport() {
+      try {
+        const projects = await axios.get("http://127.0.0.1:8000/api/report/");
+        setReport(projects.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getAllReport();
+  }, []);
   return (
     <>
       <div className="report">
@@ -25,19 +38,19 @@ function Report() {
               <tr>
                 <th>#</th>
                 <th>Project Name</th>
-                <th>Start Date</th>
-                <th>End Date</th>
                 <th>Report Status</th>
                 <th>Report File</th>
               </tr>
-              <tr>
-                <td>1</td>
-                <td>Collabrative Task Management System</td>
-                <td>12/07/024</td>
-                <td>09/08/024</td>
-                <td>Task Summary</td>
-                <td>View Report</td>
-              </tr>
+              {report.map((reports, i) => {
+                return (
+                  <tr key={i}>
+                    <td>{reports.id}</td>
+                    <td>{reports.projectName}</td>
+                    <td>{reports.reportType}</td>
+                    <td>{reports.reportfile}</td>
+                  </tr>
+                );
+              })}
             </table>
           </div>
         </div>

@@ -32,6 +32,8 @@ const Dashboard = (props) => {
                   <th>Project</th>
                   <th>Start Date</th>
                   <th>Due Date</th>
+                  <th>Project Head</th>
+                  <th>Team Members</th>
                   <th>Status</th>
                   <th>Final Report</th>
                 </tr>
@@ -43,6 +45,8 @@ const Dashboard = (props) => {
                       <td>{project.projectName}</td>
                       <td>{project.startDate}</td>
                       <td>{project.dueDate}</td>
+                      <td>{project.projectHeadName}</td>
+                      <td>{project.teamMemberName}</td>
                       <td>{project.status}</td>
                       <td>View</td>
                     </tr>

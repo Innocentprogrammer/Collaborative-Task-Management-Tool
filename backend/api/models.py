@@ -1,9 +1,5 @@
 from django.db import models
 
-class Student(models.Model):
-    student=models.CharField(max_length=100)
-    email=models.CharField(max_length=100)
-
 class Project(models.Model):
     projectName=models.CharField(max_length=150)
     startDate=models.DateField()
@@ -17,5 +13,8 @@ class Report(models.Model):
     reportType = models.CharField(max_length=20)
     projectName = models.CharField(max_length=150)
     reportfile = models.CharField(max_length=7000)
+
+class Task(models.Model):
+    task = models.CharField(max_length=200)
 
 # Create your models here.

@@ -1,10 +1,6 @@
 from rest_framework import serializers
-from .models import Student, Project, Report
+from .models import Project, Report, Task
 
-class StudentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=Student
-        fields=['id','student','email']
 
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
@@ -25,3 +21,8 @@ class CreateReportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Report 
         fields = ['reportType','projectName','reportfile']
+
+class TaskSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Task 
+        fields= ['id','task']

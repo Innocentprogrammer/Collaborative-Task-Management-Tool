@@ -1,10 +1,6 @@
 from django.contrib import admin
-from .models import Student, Project, Report
+from .models import Project, Report, Task
 
-class StudentAdmin(admin.ModelAdmin):
-    list_display = ('student', 'email')
-
-admin.site.register(Student,StudentAdmin)
 
 class ProjectAdmin(admin.ModelAdmin):
     list_display =('projectName','startDate','dueDate','projectHeadName','teamMemberName','Description','status')
@@ -14,4 +10,7 @@ class ReprotAdmin(admin.ModelAdmin):
     list_display = ('reportType','projectName','reportfile')
 admin.site.register(Report, ReprotAdmin)
 
+class TaskAdmin(admin.ModelAdmin):
+    list_display = ('task',)
+admin.site.register(Task, TaskAdmin)
 # Register your models here.

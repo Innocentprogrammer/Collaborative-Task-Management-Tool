@@ -6,6 +6,8 @@ import house from "./house.png";
 import dashboard from "./dashboard.png";
 import Report from "./Report.png";
 import search from "./search.png";
+import deleted from "./delete.png";
+
 
 export const assets = {
   avtar,
@@ -16,4 +18,5 @@ export const assets = {
   dashboard,
   Report,
   search,
+  deleted,
 };

@@ -17,7 +17,30 @@ const Dashboard = (props) => {
     }
     getAllProject();
   }, []);
-
+  const [report, setReport] = useState([]);
+  useEffect(() => {
+    async function getAllReport() {
+      try {
+        const report = await axios.get("http://127.0.0.1:8000/api/report/");
+        setReport(report.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getAllReport();
+  }, []);
+  const [tasks, setTasks] = useState([]);
+  useEffect(() => {
+    async function getAllTask() {
+      try {
+        const response = await axios.get("http://127.0.0.1:8000/api/todos/");
+        setTasks(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getAllTask();
+  }, []);
   return (
     <>
       <div className="content">
@@ -35,10 +58,12 @@ const Dashboard = (props) => {
                   <th>Project Head</th>
                   <th>Team Members</th>
                   <th>Status</th>
-                  <th>Final Report</th>
+                  <th>Report</th>
                 </tr>
                 {projects.map((project, i) => {
-                  
+                  const projectReport = report.find(
+                    (report) => report.projectName === project.projectName
+                  );
                   return (
                     <tr key={i}>
                       <td>{project.id}</td>
@@ -48,7 +73,11 @@ const Dashboard = (props) => {
                       <td>{project.projectHeadName}</td>
                       <td>{project.teamMemberName}</td>
                       <td>{project.status}</td>
-                      <td>View</td>
+                      <td>
+                        {projectReport && projectReport.reportfile
+                          ? projectReport.reportfile
+                          : "Report not submitted yet"}
+                      </td>
                     </tr>
                   );
                 })}
@@ -67,7 +96,7 @@ const Dashboard = (props) => {
             </div>
             <div className="TTask">
               <div>
-                <h2>6</h2>
+                <h2>{tasks.length}</h2>
                 <h4>Total Task</h4>
               </div>
               <div className="img2">

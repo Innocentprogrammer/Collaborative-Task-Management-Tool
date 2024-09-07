@@ -1,6 +1,7 @@
 import React from "react";
 import { assets } from "../assest/assest";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const name = "Mratyunjay";
@@ -8,6 +9,11 @@ function Navbar() {
     <div>
       <nav>
         <div class="navBar">
+          <div>
+            <Link to="/login">
+              <button>Login</button>
+            </Link>
+          </div>
           <div class="avtar">
             <img src={assets.avtar} alt="avtar" />
           </div>

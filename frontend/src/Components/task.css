@@ -40,7 +40,7 @@
   box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 5, 25);
 }
 
-.task .task-container .add-task button:hover{
+.task .task-container .add-task button:hover {
   background-color: rgb(70, 157, 245);
   color: black;
   letter-spacing: 0.1rem;
@@ -57,5 +57,13 @@
   border-radius: 0.5rem;
   padding: 1rem 2rem 1rem 2rem;
   box-shadow: -3px 3px 3px gray;
-  font-size: 1.3em;
+  font-size: 1em;
+}
+
+.task .task-container .show-task .tasklist table {
+  width: 100%;
+}
+
+.task .task-container .show-task .tasklist img {
+  width: 2rem;
 }

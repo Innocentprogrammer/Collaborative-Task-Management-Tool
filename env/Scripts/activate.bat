@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Projects\Internship Project\Collabrative Task Management System\env
+set VIRTUAL_ENV=C:\Projects\Internship Project\Collaborative-Task-Management-Tool\env
 
 if not defined PROMPT set PROMPT=$P$G
 

@@ -45,9 +45,9 @@ function Sidebar() {
     setIsVisible5(false);
   };
   return (
-    <div>
+    <div class="sideBar">
       <header>
-        <div class="sideBar">
+        <div>
           <div class="logo">
             <Link to="/">
               <img src={assets.menu} alt="logo" />

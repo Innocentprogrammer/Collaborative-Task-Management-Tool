@@ -8,6 +8,7 @@ import Task from "./Components/Task";
 import ReportForm from "./Components/ReportForm";
 import Sidebar from "./Components/Sidebar";
 import Navbar from "./Components/Navbar";
+import Login from "./auth/login";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/task" element={<Task />} />
                 <Route path="/report" element={<Report />} />
                 <Route path="/reportform" element={<ReportForm />} />
+                <Route path="/login" element={<Login />} />
               </Routes>
             </div>
           </div>

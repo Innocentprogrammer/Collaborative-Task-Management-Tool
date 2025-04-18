@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    # 'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -131,3 +132,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 REST_FRAMEWORK={
     'DEFAULT_RENDERER_CLASSES':('rest_framework.renderers.JSONRenderer',)
 }
+
+MEDIA_URL= '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
